@@ -1,5 +1,5 @@
 import pandas as pd
-from email_functions import ricci_group_1_emails, telegram_sender, ricci_group_2_emails, principia_1_emails, principia_2_emails, telegram_sender_principia, telegram_sender_quant
+from email_functions import telegram_sender, telegram_sender_principia, telegram_sender_quant, telegram_sender_bono6m
 from rating_class import clasificador, summary
 
 #Riesgo-beneficio, TPs
@@ -72,6 +72,7 @@ def df_reversal_calc(list, list2, list3):
         telegram_sender.send_telegram_message(df, 'Reversal Trades 1 hr long')
         telegram_sender_principia.send_telegram_message(df, 'Reversal Trades 1 hr long')
         telegram_sender_quant.send_telegram_message(df, 'Reversal Trades 1 hr long')
+        telegram_sender_bono6m(df, 'Reversal Trades 1 hr long')
 
     else:
         print('no cryptos were found')

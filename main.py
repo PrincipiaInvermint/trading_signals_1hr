@@ -19,9 +19,11 @@ key = config.get('BINANCE', 'KEY')
 client = Client(api, key)
 
 #Crypto List
-symbols = ('BTC','ETH','XRP','BNB','ADA','SOL','MATIC','DOT','TRX','AVAX','UNI','ATOM','LTC','LINK','XLM','XMR','ALGO','NEAR','QNT','AAVE')
+symbols = ('BTC','ETH','BNB','ADA','SOL','MATIC','DOT','TRX','AVAX','UNI','ATOM','LTC','LINK','XMR','ALGO','NEAR','AAVE,'
+            'FET','OCEAN','EGLD','FIL','SAND','MANA','FTM')
 
-#symbols = ('BTC', 'ETH', 'DOT', 'SOL', 'MATIC', 'ATOM', 'FTM','ADA','BNB')
+
+
 
 #Parametros para las señales 1 hora
 run_interval_seconds = 60 * 30
