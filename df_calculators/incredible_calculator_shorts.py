@@ -77,7 +77,7 @@ def df_incredible_calc_shorts(list, list2, list3):
         telegram_sender.send_telegram_message(df,'Incredible Trades 1 hr Short')
         telegram_sender_principia.send_telegram_message(df, 'Incredible Trades 1 hr Short')
         telegram_sender_quant.send_telegram_message(df, 'Incredible Trades 1 hr Short')
-        telegram_sender_bono6m(df, 'Incredible Trades 1 hr Short')
+        telegram_sender_bono6m.send_telegram_message(df, 'Incredible Trades 1 hr Short')
 
     else:
         print('no cryptos were found')
