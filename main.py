@@ -14,7 +14,7 @@ config = configparser.ConfigParser()
 config.read_file(open('conexion_API.cfg'))
 api = config.get('BINANCE', 'API')
 key = config.get('BINANCE', 'KEY')
-
+# este es moha
 #Conexion con binance para extraer datos
 client = Client(api, key)
 
